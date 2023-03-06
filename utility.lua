@@ -10,18 +10,20 @@ function init()
   
   --input only
   softcut.level(1,0)
- 
-  
-  softcut.play(1,1)
+  --no playback
+  softcut.play(1,0)
   softcut.rec(1,1)
-  softcut.loop(1,0)
+  --5mins recording then loop
+  softcut.loop(1,1)
   softcut.loop_start(1,1)
+  softcut.loop_end(1,300)
+  
   softcut.position(1,1)
   softcut.rate(1,1)
   softcut.rec_level(1,0)
   softcut.pre_level(1,1)
   softcut.level_input_cut(1,1,1)
-  softcut.loop_end(1,5)
+ 
   
 end
 
